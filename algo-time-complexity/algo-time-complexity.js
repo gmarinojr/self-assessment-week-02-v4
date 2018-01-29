@@ -13,14 +13,15 @@ var TimeComplexity = {
 };
 
 
-var sortedIndexOfTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var sortedIndexOfTimeComplexity =  TimeComplexity.LOGARITHMIC; // TODO: This is a
+// binary search Tree, so accessing the target element is logarithmic.
 
 var sortedIndexOf = function(array, targetElement) {
   var minIndex = 0;
   var maxIndex = array.length - 1;
   var currentIndex;
   var currentElement;
- 
+
   while (minIndex <= maxIndex) {
     currentIndex = Math.floor((minIndex + maxIndex) / 2);
     currentElement = array[currentIndex];
@@ -33,12 +34,13 @@ var sortedIndexOf = function(array, targetElement) {
       return currentIndex;
     }
   }
- 
+
   return -1;
 };
 
 
-var findDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var findDuplicatesTimeComplexity =  TimeComplexity.LINEAR; // TODO: Searching
+// for the letter required iterating through a string, which is linear.
 
 var findDuplicates = function(string) {
   var tracker = {};
@@ -57,7 +59,9 @@ var findDuplicates = function(string) {
 };
 
 
-var bruteForcePasswordTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var bruteForcePasswordTimeComplexity =  TimeComplexity.EXPONENTIAL; // TODO: Searching
+// for the password requires iterating through the alphabet and if attempt length increases,
+// it increases at an exponential rate.
 
 var bruteForcePassword = function(max) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -77,7 +81,9 @@ var bruteForcePassword = function(max) {
 };
 
 
-var hasDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var hasDuplicatesTimeComplexity =  TimeComplexity.EXPONENTIAL; // TODO: Searching
+// for duplicates is linear, but since we are creating a new array with slice, it
+// becomes exponential.
 
 var hasDuplicates = function(array) {
   for (var i = 0; i < array.length; i++) {
@@ -91,7 +97,9 @@ var hasDuplicates = function(array) {
 
 
 
-var removeLastThreeElementsTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var removeLastThreeElementsTimeComplexity =  TimeComplexity.CONSTANT; // TODO: Removing
+// the last 3 elements from the array is constant because we know exactly where those
+// indexes at the end.
 
 var removeLastThreeElements = function(array) {
   var numberOfElementsToRemove = 3;
@@ -102,7 +110,8 @@ var removeLastThreeElements = function(array) {
 };
 
 
-var increasingStepTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var increasingStepTimeComplexity =  TimeComplexity.LINEAR; // TODO: Increasing the time
+// requires iterating through the number, which is a linear rate.
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
@@ -111,7 +120,8 @@ var increasingStep = function(number) {
 };
 
 
-var makeRangeTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var makeRangeTimeComplexity =  TimeComplexity.EXPONENTIAL; // TODO: This function has a
+// forEach loop AND a for loop within it, so it increases at an exponential rate.
 
 var makeRange = function(array) {
   array.forEach(function(item) {
@@ -120,4 +130,3 @@ var makeRange = function(array) {
     }
   });
 };
-
