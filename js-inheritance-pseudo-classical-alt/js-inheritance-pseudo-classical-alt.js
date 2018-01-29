@@ -52,12 +52,13 @@ Horse.prototype.goSomewhere = function(destination){
 }
 
 // Create new instance of object
-var horse = new Horse();
+var myHorse = new Horse();
 
 
 // Function: Flying Horse
 var FlyingHorse = function(name, color) {
   var result = {};
+  result.name = name;
   result.color = color;
 
   return result;
@@ -74,6 +75,6 @@ FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination){
 }
 
 // Create new instance of object
-var flyingHorse = new FlyingHorse();
+var myFlyingHorse = new FlyingHorse();
 
-// Complete
+// Completed

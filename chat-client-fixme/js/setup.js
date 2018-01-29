@@ -117,6 +117,10 @@ var postData = function(message, username) {
     }),
     success: function(data) {
       console.log('Success!', data);
+      // Check for the new data
+      checkNewData();
+      // Display the new data
+      displayData();
       // Alert notifying the user that the message was successfully sent.
       alert("Message Sent!")
     },
@@ -126,4 +130,4 @@ var postData = function(message, username) {
   });
 };
 
-// Complete
+// Completed
