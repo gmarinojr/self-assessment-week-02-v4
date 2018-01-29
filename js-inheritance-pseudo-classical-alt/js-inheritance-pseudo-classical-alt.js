@@ -41,7 +41,7 @@ var makeFlyingHorse = function(name, color) {
 // Function: Horse
 var Horse = function(name) {
   var result = {
-    this.name = name
+    result.name = name
   };
   return result;
 };

@@ -40,7 +40,7 @@ var sortedIndexOf = function(array, targetElement) {
 
 
 var findDuplicatesTimeComplexity =  TimeComplexity.LINEAR; // TODO: Searching
-// for the letter required iterating through a string, which is linear.
+// for the letter requires iterating through a string, which is linear.
 
 var findDuplicates = function(string) {
   var tracker = {};
@@ -81,9 +81,9 @@ var bruteForcePassword = function(max) {
 };
 
 
-var hasDuplicatesTimeComplexity =  TimeComplexity.EXPONENTIAL; // TODO: Searching
+var hasDuplicatesTimeComplexity =  TimeComplexity.QUADRATIC; // TODO: Searching
 // for duplicates is linear, but since we are creating a new array with slice, it
-// becomes exponential.
+// becomes quadratic.
 
 var hasDuplicates = function(array) {
   for (var i = 0; i < array.length; i++) {
@@ -110,8 +110,9 @@ var removeLastThreeElements = function(array) {
 };
 
 
-var increasingStepTimeComplexity =  TimeComplexity.LINEAR; // TODO: Increasing the time
-// requires iterating through the number, which is a linear rate.
+var increasingStepTimeComplexity =  TimeComplexity.LOGARITHMIC; // TODO: Increasing the time
+// requires iterating through the number, but the number is doubled, reducing the iterating time
+// half each time.
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
@@ -120,8 +121,8 @@ var increasingStep = function(number) {
 };
 
 
-var makeRangeTimeComplexity =  TimeComplexity.EXPONENTIAL; // TODO: This function has a
-// forEach loop AND a for loop within it, so it increases at an exponential rate.
+var makeRangeTimeComplexity =  TimeComplexity.LINEAR; // TODO: This function has to
+// iterate through the array, which is at a linear time.
 
 var makeRange = function(array) {
   array.forEach(function(item) {
