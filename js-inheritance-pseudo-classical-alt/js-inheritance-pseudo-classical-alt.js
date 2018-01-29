@@ -58,7 +58,7 @@ var horse = new Horse("Ted");
 // Function: Flying Horse
 var FlyingHorse = function(name, color) {
   var result = {
-    this.color = color
+    result.color = color
   };
   return result;
 };
