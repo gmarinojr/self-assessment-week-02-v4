@@ -48,11 +48,11 @@ var Horse = function(name) {
 
 // Horse Method: Go Somewhere
 Horse.prototype.goSomewhere = function(destination){
-  return this.name + ' is galloping to ' + destination + '!';
+  return this.name + ' is galloping to ' + this.destination + '!';
 }
 
 // Create new instance of object
-var horse = new Horse("Ted");
+var horse = new Horse();
 
 
 // Function: Flying Horse
@@ -65,15 +65,15 @@ var FlyingHorse = function(name, color) {
 
 // FlyingHorse Method: Go Somewhere
 FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination){
-  if (milesToDestination < 10){
-    return goSomewhere(destination);
+  if (this.milesToDestination < 10){
+    return goSomewhere(this.destination);
   }
   else{
-    return this.name + ' is flying to ' + destination + '!';
+    return this.name + ' is flying to ' + this.destination + '!';
   }
 }
 
 // Create new instance of object
-var flyingHorse = new FlyingHorse("Ted");
+var flyingHorse = new FlyingHorse();
 
-// Completed
+// Complete
