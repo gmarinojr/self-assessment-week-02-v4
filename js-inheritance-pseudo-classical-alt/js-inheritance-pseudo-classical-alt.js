@@ -75,3 +75,5 @@ FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination){
 
 // Create new instance of object
 var flyingHorse = new FlyingHorse("Ted");
+
+// Complete
