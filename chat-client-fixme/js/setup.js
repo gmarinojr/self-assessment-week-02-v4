@@ -104,6 +104,8 @@ var displayData = function(data, user) {
   });
 };
 
+// This function is responsible for sending the message because the type is "Post,"
+// which sends the data to the server.
 var postData = function(message, username) {
   $.ajax({
     url: SERVER_URL,
@@ -115,9 +117,13 @@ var postData = function(message, username) {
     }),
     success: function(data) {
       console.log('Success!', data);
+      // Alert notifying the user that the message was successfully sent.
+      alert("Message Sent!")
     },
     error: function(data) {
       console.log(data);
     }
   });
 };
+
+// Complete
