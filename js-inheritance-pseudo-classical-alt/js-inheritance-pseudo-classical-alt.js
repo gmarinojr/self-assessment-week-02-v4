@@ -40,9 +40,9 @@ var makeFlyingHorse = function(name, color) {
 
 // Function: Horse
 var Horse = function(name) {
-  var result = {
-    result.name = name
-  };
+  var result = {};
+  result.name = name;
+
   return result;
 };
 
@@ -57,9 +57,9 @@ var horse = new Horse("Ted");
 
 // Function: Flying Horse
 var FlyingHorse = function(name, color) {
-  var result = {
-    result.color = color
-  };
+  var result = {};
+  result.color = color;
+
   return result;
 };
 
@@ -76,4 +76,4 @@ FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination){
 // Create new instance of object
 var flyingHorse = new FlyingHorse("Ted");
 
-// Complete
+// Completed

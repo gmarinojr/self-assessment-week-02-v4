@@ -132,4 +132,4 @@ var makeRange = function(array) {
   });
 };
 
-// Complete
+// Completed
